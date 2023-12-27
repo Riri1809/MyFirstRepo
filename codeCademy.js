@@ -80,4 +80,15 @@ if(runnerAge > 18 && registerEarly){
 } else {
   console.log('See the registration desk')
 };
-
+//list with same followers
+const bobsFollowers = ['george', 'max', 'felix', 'marc'];
+const tinasFollowers = ['george', 'belle', 'max'];
+const mutualFollowers = [];
+for(let i = 0; i < bobsFollowers.length; i++){
+  for(let j = 0; j < tinasFollowers.length; j++){
+    if(bobsFollowers[i] === tinasFollowers[j]){
+      mutualFollowers.push(bobsFollowers[i]);
+    }
+  }
+}
+console.log(mutualFollowers);
